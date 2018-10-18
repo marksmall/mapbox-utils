@@ -1,0 +1,89 @@
+{
+  "name": "mapbox-utils",
+  "version": "0.0.1",
+  "description": "A module containing a number of useful mapbox-gl-js controls and mapbox-gl-draw modes.",
+  "main": "dist/js/index.cjs.js",
+  "module": "dist/js/index.esm.js",
+  "browser": "dist/js/index.umd.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marksmall/mapbox-utils.git"
+  },
+  "keywords": [
+    "mapbox",
+    "mapbox-gl-js",
+    "control",
+    "modes"
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": "Mark Small",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marksmall/mapbox-utils/issues"
+  },
+  "homepage": "https://github.com/marksmall/mapbox-utils#readme",
+  "huskey": {
+    "hooks": {
+      "pre-commit": "yarn test",
+      "pre-push": "yarn test"
+    }
+  },
+  "jest": {
+    "testRegex": "src/.*\\.test\\.(js|jsx)$"
+  },
+  "scripts": {
+    "test": "jest --env=jsdom",
+    "coverage": "yarn test -- --coverage",
+    "lint": "eslint src/*.js",
+    "clean": "rimraf dist",
+    "flow": "flow check",
+    "flowbuild": "flow-copy-source src dist",
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "serve": "st -nc -i index.html",
+    "semantic-release": "semantic-release --dryRun false --no-ci"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@semantic-release/changelog": "^3.0.1",
+    "@semantic-release/commit-analyzer": "^6.1.0",
+    "@semantic-release/git": "^7.0.5",
+    "@semantic-release/github": "^5.2.1",
+    "@semantic-release/npm": "^5.0.5",
+    "@semantic-release/release-notes-generator": "^7.1.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.7.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-flowtype": "^3.0.0",
+    "eslint-plugin-flowtype-errors": "^3.6.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "flow-bin": "^0.83.0",
+    "flow-copy-source": "^2.0.2",
+    "husky": "^1.1.2",
+    "jest-cli": "^23.6.0",
+    "prettier": "^1.14.3",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.67.0",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-eslint": "^5.0.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-postcss": "^1.6.2",
+    "rollup-watch": "^4.3.1",
+    "semantic-release": "^15.10.7",
+    "st": "^1.2.2"
+  },
+  "peerDependencies": {
+    "file-saver": "^2.0.0-rc.4",
+    "mapbox-gl": "^0.50.0"
+  },
+  "dependencies": {}
+}
