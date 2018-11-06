@@ -1,4 +1,7 @@
 // Rollup plugins
+import resolve from 'rollup-plugin-node-resolve';
+import commonjs from 'rollup-plugin-commonjs';
+import eslint from 'rollup-plugin-eslint';
 import postcss from 'rollup-plugin-postcss';
 import babel from 'rollup-plugin-babel';
 
@@ -13,6 +16,15 @@ export default {
   ],
   sourceMap: 'inline',
   plugins: [
+    resolve({
+      jsnext: true,
+      main: true,
+      browser: true
+    }),
+    commonjs(),
+    // eslint({
+    //   exclude: ['src/**/*.css']
+    // }),
     postcss({
       extensions: ['.css']
     }),

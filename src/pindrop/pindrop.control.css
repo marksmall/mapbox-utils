@@ -1,0 +1,29 @@
+.pindrop-control {
+  background-color: rgb(255, 255, 255);
+  height: 30px;
+  width: 30px;
+  background-image: url(https://api.mapbox.com/mapbox.js/v2.4.0/images/icons-000000@2x.png);
+  background-position: 0px -52px;
+  background-size: 26px 260px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 2px;
+  cursor: pointer;
+}
+
+.pindrop-label input {
+  text-align: center;
+  padding: 0.3rem;
+  border: 1px solid #000;
+  border-radius: 0.3rem;
+  opacity: 0.7;
+}
+
+.pindrop-label .mapboxgl-popup-tip {
+  display: none;
+}
+
+.pindrop-label .mapboxgl-popup-content {
+  background: unset;
+  padding: 0;
+}
