@@ -1,0 +1,22 @@
+.branding-control {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+}
+
+.branding-control a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.branding-control span {
+  color: #454445;
+  font-weight: bolder;
+}
+
+.branding-control svg {
+  width: 25px;
+  padding-right: 0.2rem;
+}

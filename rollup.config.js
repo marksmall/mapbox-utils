@@ -7,7 +7,7 @@ import pkg from './package.json';
 export default {
   input: 'src/index.js',
   output: [
-    { file: pkg.browser, format: 'umd', name: 'project name' },
+    { file: pkg.browser, format: 'umd', name: 'mapboxUtils' },
     { file: pkg.main, format: 'cjs' },
     { file: pkg.module, format: 'es' }
   ],
