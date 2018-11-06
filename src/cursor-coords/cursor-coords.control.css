@@ -1,0 +1,13 @@
+.coords-control {
+  color: #f00;
+  background: #000;
+  min-width: 16rem;
+  max-width: 16rem;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #000;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 8px;
+  border-radius: 4px;
+  margin: 8px;
+}
